@@ -39,7 +39,7 @@ public class ConsoleView {
                     System.out.println("Produkt Preis: ");
                     float preis = scanner.nextFloat();
                     scanner.nextLine();
-                    System.out.println("Produkt Jahreszeit: ");
+                    System.out.println("Produkt Ort: ");
                     String ort = scanner.nextLine();
                     Produkt produkt = new Produkt(name, preis, ort);
                     controller.addProdukt(produkt);
