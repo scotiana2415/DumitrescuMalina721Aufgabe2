@@ -21,7 +21,7 @@ public class ConsoleView {
                 7 - Update Charakter
                 8 - Delete Charakter
                 9 - Filter Charakter nach Ort
-                10 - Filter Kunden nach Produkt Jahreszeit
+                10 - Filter alle Charaktere, die ein Produkt aus einer vom Benutzer angegebenen Herkunftsregion gekauft haben
                 11 - Sort Produkte eines Kunden""");
     }
 
@@ -135,9 +135,9 @@ public class ConsoleView {
                     break;
                 }
                 case "10": {
-                    System.out.println("Jahreszeit: ");
-                    String jahreszeit = scanner.nextLine();
-                    controller.filterNachJahrzeit(Jahreszeit.valueOf(jahreszeit));
+                    System.out.println("Produkt Herkunftsregion: ");
+                    String region = scanner.nextLine();
+                    controller.filterCharaktereNachProduktRegion(region);
                     break;
                 }
                 case "11": {
@@ -153,3 +153,6 @@ public class ConsoleView {
         }
     }
 }
+
+
+
